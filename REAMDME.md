@@ -1,0 +1,1 @@
+### Solução desenvolvida para teste seletivo da Alterdata.
