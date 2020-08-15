@@ -1,0 +1,17 @@
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.deps.json
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.runtimeconfig.json
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.runtimeconfig.dev.json
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.dll
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.pdb
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.Dominio.dll
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/bin/Debug/netcoreapp2.2/SistemaVotacao.Dominio.pdb
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.csprojAssemblyReference.cache
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.csproj.CoreCompileInputs.cache
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.AssemblyInfoInputs.cache
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.AssemblyInfo.cs
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.csproj.CopyComplete
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.dll
+/home/vitor/Projects/sistema-votacao/test/SistemaVotacao.DominioTest/obj/Debug/netcoreapp2.2/SistemaVotacao.DominioTest.pdb
