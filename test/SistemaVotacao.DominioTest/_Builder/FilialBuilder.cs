@@ -1,6 +1,6 @@
-using System;
-using SistemaVotacao.Dominio;
-using static SistemaVotacao.DominioTest.Filiais.FilialTest;
+
+using SistemaVotacao.Dominio.Filiais;
+
 
 namespace SistemaVotacao.DominioTest._Builder
 {

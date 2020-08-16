@@ -5,7 +5,7 @@ using Xunit.Abstractions;
 using Bogus;
 using SistemaVotacao.DominioTest._Util;
 using SistemaVotacao.DominioTest._Builder;
-using SistemaVotacao.Dominio;
+using SistemaVotacao.Dominio.Filiais;
 
 
 

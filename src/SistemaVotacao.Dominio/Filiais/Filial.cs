@@ -1,18 +1,18 @@
 using System;
 
-namespace SistemaVotacao.Dominio
+namespace SistemaVotacao.Dominio.Filiais
 {
     public class Filial
     {
-        public string nome { get; private set; }
-        public string rua { get; private set; }
-        public string uf { get; private set; }
-        public string cidade { get; private set; }
+        public string Nome { get; private set; }
+        public string Rua { get; private set; }
+        public string Uf { get; private set; }
+        public string Cidade { get; private set; }
 
-        public string bairro { get; private set; }
+        public string Bairro { get; private set; }
 
-        public string numero { get; private set; }
-        public string complemento { get; private set; }
+        public string Numero { get; private set; }
+        public string Complemento { get; private set; }
 
         public Filial(string nome, string rua, string uf, string cidade, string bairro, string numero, string complemento)
         {
@@ -32,13 +32,13 @@ namespace SistemaVotacao.Dominio
                 throw new ArgumentException("Bairro inválido");
 
 
-            this.nome = nome;
-            this.rua = rua;
-            this.uf = uf;
-            this.cidade = cidade;
-            this.bairro = bairro;
-            this.numero = numero;
-            this.complemento = complemento;
+            this.Nome = nome;
+            this.Rua = rua;
+            this.Uf = uf;
+            this.Cidade = cidade;
+            this.Bairro = bairro;
+            this.Numero = numero;
+            this.Complemento = complemento;
         }
     }
 
