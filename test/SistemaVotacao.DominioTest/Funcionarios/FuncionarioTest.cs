@@ -14,16 +14,14 @@ namespace SistemaVotacao.DominioTest.Funcionarios
     {
 
         private string _nome;
-        private string _email;
-        private int _filialId;
+        private string _email;        
         private string _senha;
 
         public FuncionarioTest()
         {
             Faker faker = new Faker();
             _nome = faker.Person.FullName;
-            _email = faker.Person.Email;
-            _filialId = faker.Random.Int(1, 50);
+            _email = faker.Person.Email;            
             _senha = faker.Random.Word();
         }
 
@@ -33,15 +31,13 @@ namespace SistemaVotacao.DominioTest.Funcionarios
             var funcionarioEsperado = new
             {
                 Nome = "João José",
-                Email = "joaojose@email.com",
-                FilialId = 1,
+                Email = "joaojose@email.com",                
                 Senha = "123123"
             };
 
             var funcionario = new Funcionario(
                 funcionarioEsperado.Nome,
-                funcionarioEsperado.Email,
-                funcionarioEsperado.FilialId,
+                funcionarioEsperado.Email,                
                 funcionarioEsperado.Senha
             );
 
@@ -51,7 +47,9 @@ namespace SistemaVotacao.DominioTest.Funcionarios
         [Theory]
         [InlineData("")]
         [InlineData(null)]
-        public void NaoDeveCriarFuncionarioSemEmail(string emailInvalido)
+        [InlineData("email invalido")]
+        [InlineData("email@invalido")]
+        public void NaoDeveCriarFuncionarioComEmailInvalido(string emailInvalido)
         {
             Assert.Throws<ArgumentException>(() => FuncionarioBuilder.Novo()
             .ComEmail(emailInvalido)
@@ -77,7 +75,6 @@ namespace SistemaVotacao.DominioTest.Funcionarios
             Assert.Throws<ArgumentException>(() => FuncionarioBuilder.Novo()
             .ComSenha(senhaInvalida)
             .Build()).ComMensagem("Senha não pode ser vazia ou nula");
-
 
         }
 

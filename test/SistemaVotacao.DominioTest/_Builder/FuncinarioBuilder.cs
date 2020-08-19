@@ -6,10 +6,9 @@ namespace SistemaVotacao.DominioTest._Builder
 {
     public class FuncionarioBuilder
     {
-        private string _nome = "uisdafsdaf";
-        private string _email = "uisdafsdaf";
-        private int _filialId = 1;
-        private string _senha = "uisdafsdaf";
+        private string _nome = "Jose da Silva";
+        private string _email = "email@email.com";        
+        private string _senha = "123123123";
 
         public static FuncionarioBuilder Novo()
         {
@@ -30,7 +29,7 @@ namespace SistemaVotacao.DominioTest._Builder
 
         public FuncionarioBuilder ComFilialId(int filialId)
         {
-            _filialId = filialId;
+            // _filialId = filialId;
             return this;
         }
 
@@ -42,7 +41,7 @@ namespace SistemaVotacao.DominioTest._Builder
 
         public Funcionario Build()
         {
-            return new Funcionario(_nome,_email,_filialId,_senha);
+            return new Funcionario(_nome,_email,_senha);
         }
 
     }

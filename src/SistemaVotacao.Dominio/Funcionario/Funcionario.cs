@@ -1,32 +1,28 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace SistemaVotacao.Dominio.Funcionario
 {
      public class Funcionario
     {
-
+        private readonly Regex _emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
         public string Nome { get; private set; }
         public string Email { get; private set; }
-        public int FilialId { get; private set; }
         public string Senha { get; private set; }
 
-        public Funcionario(string nome, string email, int filialId, string senha)
-        {
-            if (string.IsNullOrEmpty(email))
-                throw new ArgumentException("Email inválido");
-
+        public Funcionario(string nome, string email, string senha)
+        {           
             if (string.IsNullOrEmpty(nome))
                 throw new ArgumentException("Nome inválido");
 
             if (string.IsNullOrEmpty(senha))
                 throw new ArgumentException("Senha não pode ser vazia ou nula");
 
-            if (filialId == null || filialId <= 0)
-                throw new ArgumentException("Funcionario deve ser vinculado a filial");
+            if(string.IsNullOrEmpty(email) || !_emailRegex.Match(email).Success)
+                throw new ArgumentException("Email inválido");
 
             this.Nome = nome;
             this.Email = email;
-            this.FilialId = filialId;
             this.Senha = senha;
         }
     }
