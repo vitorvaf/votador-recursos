@@ -31,7 +31,6 @@ namespace SistemaVotacao.DominioTest.Funcionarios
         }
 
 
-
         [Fact]
         public void DeveAdicionarFuncionario()
         {
@@ -50,49 +49,10 @@ namespace SistemaVotacao.DominioTest.Funcionarios
                                    .Returns(funcionarioComEmailCadastrado);
 
             Assert.Throws<ArgumentException>(() => _armazenadorDeFuncionario.Adicionar(_funcionarioDto))
-                .ComMensagem("Email inválido");            
+                .ComMensagem("Email ja cadastrado");            
 
-        }
-
-    }
-
-    public interface IFuncionarioRepositorio
-    {
-        void Adicionar(Funcionario funcionario);
-        Funcionario ObterPeloEmail(string email);
-    }  
-
-    public class ArmazenadorDeFuncionario
-    {
-
-        private IFuncionarioRepositorio _funcionarioRepositorio;
-
-        public ArmazenadorDeFuncionario(IFuncionarioRepositorio funcionarioRepositorio)
-        {
-            _funcionarioRepositorio = funcionarioRepositorio;
-            
-        }
-
-        public void Adicionar(FuncionarioDTO funcionarioDto)
-        {
-            var novoFuncionario = new Funcionario(funcionarioDto.Nome,funcionarioDto.Email, funcionarioDto.Senha);
-            _funcionarioRepositorio.Adicionar(novoFuncionario);
-            
-        }
-
-        public Funcionario ObterPeloEmail(string email)
-        {
-            throw new NotImplementedException();
         }
 
     }    
-
-    public class FuncionarioDTO
-    {
-        public string Nome { get;  set; }
-        public string Email { get; set; }
-        public string Senha { get; set; }
-
-    }
 
 }
