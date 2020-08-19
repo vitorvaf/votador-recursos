@@ -12,12 +12,13 @@ CREATE TABLE funcionarios (
 
 CREATE TABLE recursos (
   id SERIAL PRIMARY KEY,
-  nome VARCHAR(255)
+  nome VARCHAR(255),
+  descricao VARCHAR(255)
 );
 
 CREATE TABLE votos (
   id SERIAL PRIMARY KEY,
-  data_criacao VARCHAR(50),
+  data_criacao TIMESTAMP WITH TIME ZONE,
   id_recurso INT NOT NULL,
   id_funcionario INT NOT NULL,
 
