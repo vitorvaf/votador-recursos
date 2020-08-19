@@ -1,9 +1,0 @@
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/bin/Debug/netstandard2.0/SistemaVotacao.Dominio.deps.json
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/bin/Debug/netstandard2.0/SistemaVotacao.Dominio.dll
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/bin/Debug/netstandard2.0/SistemaVotacao.Dominio.pdb
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/obj/Debug/netstandard2.0/SistemaVotacao.Dominio.csprojAssemblyReference.cache
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/obj/Debug/netstandard2.0/SistemaVotacao.Dominio.csproj.CoreCompileInputs.cache
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/obj/Debug/netstandard2.0/SistemaVotacao.Dominio.AssemblyInfoInputs.cache
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/obj/Debug/netstandard2.0/SistemaVotacao.Dominio.AssemblyInfo.cs
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/obj/Debug/netstandard2.0/SistemaVotacao.Dominio.dll
-/home/vitor/Projects/sistema-votacao/src/SistemaVotacao.Dominio/obj/Debug/netstandard2.0/SistemaVotacao.Dominio.pdb
