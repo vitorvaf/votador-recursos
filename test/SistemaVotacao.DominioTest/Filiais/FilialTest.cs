@@ -121,8 +121,6 @@ namespace SistemaVotacao.DominioTest.Filiais
                 FilialBuilder.Novo().ComBairro(bairroInvalido).Build()).ComMensagem("Bairro inválido");
         }
 
-
-
     }
 
 
