@@ -18,9 +18,10 @@ CREATE TABLE recursos (
 
 CREATE TABLE votos (
   id SERIAL PRIMARY KEY,
-  data_criacao TIMESTAMP WITH TIME ZONE,
+  data_voto TIMESTAMP WITH TIME ZONE,
   id_recurso INT NOT NULL,
   id_funcionario INT NOT NULL,
+  comentario VARCHAR(255),
 
   CONSTRAINT fk_recurso
       FOREIGN KEY(id_recurso) 
@@ -31,14 +32,6 @@ CREATE TABLE votos (
 	  REFERENCES funcionarios(id) 
  
 );
-
-
-
-
-  
-  -- id_recurso INT FOREIGN KEY REFERENCES recurso(id),
-  -- id_usuario INT FOREIGN KEY REFERENCES funcionarios(id),
-
 
 
 

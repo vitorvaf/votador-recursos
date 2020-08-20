@@ -38,7 +38,7 @@ namespace SistemaVotacao.DominioTest.Filiais
         {
             _armazenadorDeFilial.Armazenar(_filialDto);
 
-            _filialRepositorioMock.Verify(repositiry => repositiry.Adicionar(
+            _filialRepositorioMock.Verify(repository => repository.Adicionar(
                 It.Is<Filial>(
                     f => f.Nome == _filialDto.nome &&
                     f.Rua == _filialDto.rua &&
