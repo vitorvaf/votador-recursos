@@ -57,44 +57,4 @@ namespace SistemaVotacao.DominioTest.Votos
         }
     }
 
-    public interface IVotoRepositorio
-    {
-        void ArmazenarVoto(Voto voto);
-        Voto BuscarVotoPeloIdFuncionario(int idFuncionario);
-    }
-
-    public class ArmazenadorDeVotos
-    {
-        private IVotoRepositorio _repositorio;
-
-        public ArmazenadorDeVotos(IVotoRepositorio repositorio)
-        {
-            _repositorio = repositorio;            
-        }
-
-        public void ArmazenarVoto(VotoDTO votoDTO)
-        {
-            var votoComputado = _repositorio.BuscarVotoPeloIdFuncionario(votoDTO.IdFuncionario);
-            if(votoComputado != null)
-                throw new ArgumentException("É permitido votar apenas uma vez");
-            var voto = new Voto(
-                votoDTO.Comentario,
-                votoDTO.DataVoto,
-                votoDTO.IdRecurso,
-                votoDTO.IdFuncionario);
-
-            _repositorio.ArmazenarVoto(voto);
-        }
-        
-    }
-
-    public class VotoDTO
-    {
-        public string Comentario { get; set; }
-        public DateTime DataVoto { get; set; }
-        public int IdRecurso { get; set; }
-        public int IdFuncionario { get; set; }
-    }
-
-
 }
