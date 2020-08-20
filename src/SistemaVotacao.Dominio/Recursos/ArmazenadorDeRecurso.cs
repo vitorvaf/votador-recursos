@@ -14,7 +14,7 @@ namespace SistemaVotacao.Dominio.Recursos
         public void Armazenar(RecursoDto recursoDto)
         {            
             var novoRecurso = new Recurso(recursoDto.Nome, recursoDto.Descricao);
-            _repositorio.ArmazenarRecurso(novoRecurso);
+             _repositorio.Adicionar(novoRecurso);
         }
     }
 

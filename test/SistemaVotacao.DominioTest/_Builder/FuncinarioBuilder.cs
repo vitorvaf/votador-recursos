@@ -1,5 +1,5 @@
 using System;
-using SistemaVotacao.Dominio.Funcionario;
+using SistemaVotacao.Dominio.Funcionarios;
 using SistemaVotacao.DominioTest.Funcionarios;
 
 namespace SistemaVotacao.DominioTest._Builder

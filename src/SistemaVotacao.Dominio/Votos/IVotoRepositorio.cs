@@ -1,10 +1,10 @@
 using System;
+using SistemaVotacao.Dominio._Base;
 
 namespace SistemaVotacao.Dominio.Votos
 {
-    public interface IVotoRepositorio
+    public interface IVotoRepositorio : IRepositorio<Voto>
     {
-        void ArmazenarVoto(Voto voto);
         Voto BuscarVotoPeloIdFuncionario(int idFuncionario);
     }
     

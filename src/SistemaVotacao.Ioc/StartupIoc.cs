@@ -12,8 +12,7 @@ namespace SistemaVotacao.Ioc
     {
          public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
-            // services.AddDbContext<ApplicationDbContext>(options =>
-            //     options.UseSqlServer(configuration["ConnectionString"]));            
+            
         }
     }
 }

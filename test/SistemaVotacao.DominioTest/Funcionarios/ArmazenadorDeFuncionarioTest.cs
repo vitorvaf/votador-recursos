@@ -1,7 +1,7 @@
 using System;
 using Bogus;
 using Moq;
-using SistemaVotacao.Dominio.Funcionario;
+using SistemaVotacao.Dominio.Funcionarios;
 using SistemaVotacao.DominioTest._Builder;
 using SistemaVotacao.DominioTest._Util;
 using Xunit;

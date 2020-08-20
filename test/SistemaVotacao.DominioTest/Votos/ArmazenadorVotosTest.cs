@@ -33,11 +33,10 @@ namespace SistemaVotacao.DominioTest.Votos
 
         [Fact]
         public void DeverArmazenarFilial()
-        {
-            
-            _armazenadorVoto.ArmazenarVoto(_votoDto);
+        {            
+            _armazenadorVoto.Armazenar(_votoDto);
 
-            _votoRepositorioMock.Verify(repositorio => repositorio.ArmazenarVoto(
+            _votoRepositorioMock.Verify(repositorio => repositorio.Adicionar(
                 It.Is<Voto>(voto=> voto.Comentario == _votoDto.Comentario
                 && voto.IdFuncionario == _votoDto.IdFuncionario
                 && voto.IdRecurso == _votoDto.IdRecurso)
@@ -51,7 +50,7 @@ namespace SistemaVotacao.DominioTest.Votos
             _votoRepositorioMock.Setup(voto => voto.BuscarVotoPeloIdFuncionario(_votoDto.IdFuncionario))
                                 .Returns(votoComputado);
 
-            Assert.Throws<ArgumentException>(() => _armazenadorVoto.ArmazenarVoto(_votoDto))
+            Assert.Throws<ArgumentException>(() => _armazenadorVoto.Armazenar(_votoDto))
                 .ComMensagem("É permitido votar apenas uma vez");
 
         }

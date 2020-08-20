@@ -33,7 +33,7 @@ namespace SistemaVotacao.DominioTest.Recursos
         {
             _armazenadorRecurso.Armazenar(_recursoDto);
 
-            _recursoRepositorioMock.Verify(repositorio => repositorio.ArmazenarRecurso(
+            _recursoRepositorioMock.Verify(repositorio => repositorio.Adicionar(
                 It.Is<Recurso>(r=> r.Nome == _recursoDto.Nome)
             ));
         }

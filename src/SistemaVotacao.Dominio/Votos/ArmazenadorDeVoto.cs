@@ -11,7 +11,7 @@ namespace SistemaVotacao.Dominio.Votos
             _repositorio = repositorio;            
         }
 
-        public void ArmazenarVoto(VotoDTO votoDTO)
+        public void Armazenar(VotoDTO votoDTO)
         {
             var votoComputado = _repositorio.BuscarVotoPeloIdFuncionario(votoDTO.IdFuncionario);
             if(votoComputado != null)
@@ -22,7 +22,7 @@ namespace SistemaVotacao.Dominio.Votos
                 votoDTO.IdRecurso,
                 votoDTO.IdFuncionario);
 
-            _repositorio.ArmazenarVoto(voto);
+            _repositorio.Adicionar(voto);
         }
         
     }

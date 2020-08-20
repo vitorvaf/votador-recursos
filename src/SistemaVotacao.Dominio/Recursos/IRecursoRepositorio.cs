@@ -1,10 +1,10 @@
 using System;
+using SistemaVotacao.Dominio._Base;
 
 namespace SistemaVotacao.Dominio.Recursos
 {
-    public interface IRecursoRepositorio
-    {
-        void ArmazenarRecurso(Recurso recurso);
+    public interface IRecursoRepositorio : IRepositorio<Recurso>
+    {        
         void AlterarRecurso(Recurso recurso);
     }
 
