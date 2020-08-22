@@ -22,9 +22,11 @@ namespace SistemaVotacao.Ioc
             services.AddScoped(typeof(IRecursoRepositorio), typeof(RecursoRepositorio));
             services.AddScoped(typeof(IFuncionarioRepositorio), typeof(FuncionarioRepositorio));
             services.AddScoped(typeof(IVotoRepositorio), typeof(VotoRepositorio));
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddScoped<ArmazenadorDeRecurso>();
             services.AddScoped<ArmazenadorDeFuncionario>();
             services.AddScoped<ArmazenadorDeVotos>();
+
 
         }
 
